@@ -1,0 +1,17 @@
+export type IRightData = {
+    title: string,
+    description: string,
+    number: string,
+    DOB: Date,
+    EXP: Date,
+    HT: string,
+    WT: number,
+    hair: string,
+    eyes: string,
+    sex: string,
+    city: number,
+    issueDate: Date,
+    class_number: number,
+    restr?: string,
+    endorse?: string,
+}

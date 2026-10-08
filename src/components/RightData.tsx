@@ -1,6 +1,7 @@
 import { IRightData } from "@/types/IRightData";
+import Image from "next/image";
 
-export default function({ title, description, number, DOB, EXP, HT, WT, hair, eyes, sex, city, issueDate, class_number, restr, endorse } : IRightData) {
+export default function RightData({ title, description, number, DOB, EXP, HT, WT, hair, eyes, sex, city, issueDate, class_number, restr, endorse } : IRightData) {
     let fechaDOB = `${DOB.getDay() < 10 ? "0" + DOB.getDate() : DOB.getDate()}/${DOB.getMonth() < 10 ? "0" + DOB.getMonth() : DOB.getMonth()}/${DOB.getFullYear()}`
     let fechaExp = `${EXP.getDay() < 10 ? "0" + EXP.getDate() : EXP.getDate()}/${EXP.getMonth() < 10 ? "0" + EXP.getMonth() : EXP.getMonth()}/${EXP.getFullYear()}`
     let fechaIssue = `${issueDate.getDate() < 10 ? "0" + issueDate.getDate() : issueDate.getDate()}/${issueDate.getMonth() < 10 ? "0" + issueDate.getMonth() : issueDate.getMonth()}/${issueDate.getFullYear()}`
@@ -78,7 +79,7 @@ export default function({ title, description, number, DOB, EXP, HT, WT, hair, ey
                     </span>
                 </div>
                 <div className="firma w-fit ml-10">
-                    <img src="/firma_mclovin.png" alt="Firma de mclovin"/>
+                    <Image src="/firma_mclovin.png" alt="Firma de mclovin"/>
                 </div>
             </div>
         </div>

@@ -13,7 +13,7 @@ export default function Home() {
               src={"/arcoiris.jpg"}
               fill={true}
               alt="Imagen del arcoiris de fondo para la licencia"
-              className="w-[100vw] h-full"
+              className="w-[100px] h-full"
             ></Image>
           </div>
           <section className="left-section w-4/12 h-full absolute flex">
